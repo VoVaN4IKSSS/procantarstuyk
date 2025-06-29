@@ -1,0 +1,125 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+JP+N&display=swap');
+
+nav a {
+    padding:6px 8px 6px 16px ;
+    text-decoration: none;
+    font-size: 25px;
+    color:#fffeff;
+    display: block;
+    border: 3px solid rgb(255, 0, 0);
+    margin: 5px 25px;
+    border-radius: 10px;
+    text-align:center ;
+    background-color: #000000;
+    transition: 0.4s;
+
+}
+nav a:hover {
+    color:#ff0000;
+    transition: 0.4s;
+    box-shadow:0px 5px 5px 0px rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+.statrekword {
+    color: rgb(211, 123, 8);
+    font-weight: 900;
+}
+.menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    transition:  width 0.3s ease, padding 0.3s ease;
+    width: 400px;
+    background-color: #575854;
+    display: flex;
+    align-items: center;
+  }
+.menu-wrapper nav {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px; 
+  }
+#menu-toggle {
+    position: fixed;
+    top: 50%;
+    left: 400px;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 60px;
+    background-color:#575854;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  }
+#menu-toggle::before {
+    content: "◀";
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    color: #333;
+  }
+
+
+.collapsed .menu-wrapper {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.collapsed main {
+    margin-left: 30px;
+  }
+  
+  .collapsed #menu-toggle {
+    left: 0;
+  }
+  
+  .collapsed #menu-toggle::before {
+    content: "▶";
+  }
+.collapsed #menu-toggle {
+  left: 0;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.valvephotoiinfa {
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 30px;
+    align-items: center;
+    padding: 10px 5px;
+}
+body {
+    padding-left: 200px;
+    background: url('Group\ 1\ \(4\).png');
+    background-size: cover;
+}
+p {
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  color: white;
+  max-width:550px;
+}
+main {
+  padding: 15px 15%;
+}
+.gigaboba {
+  border-radius:30px;
+}
+.ramka {
+  border: 5px solid red;
+  border-radius:6px;
+}
