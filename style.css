@@ -37,6 +37,7 @@ nav a:hover {
     background-color: #575854;
     display: flex;
     align-items: center;
+    
   }
 .menu-wrapper nav {
     padding-top: 20px;
@@ -120,6 +121,12 @@ main {
   border-radius:30px;
 }
 .ramka {
-  border: 5px solid red;
+  border: 5px solid rgb(255, 255, 255);
   border-radius:6px;
+  background-color: #575854;
+}
+.goose {
+  position:absolute;
+  bottom: -120px;
+  cursor: pointer;
 }
