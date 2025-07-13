@@ -34,7 +34,7 @@ nav a:hover {
     box-sizing: border-box;
     transition:  width 0.3s ease, padding 0.3s ease;
     width: 400px;
-    background-color: #575854;
+    background-image: url(SL_060521_43530_09.jpg);
     display: flex;
     align-items: center;
     
@@ -130,3 +130,4 @@ main {
   bottom: -120px;
   cursor: pointer;
 }
+
